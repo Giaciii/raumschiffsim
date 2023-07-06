@@ -28,7 +28,7 @@
 
     <div class="abt2">
         <!-- Luftdruck -->
-        <button onclick='luftdruck()' class="btn_col2">
+        <button onclick='luftdruckAnAus()' class="btn_col2">
             Luftdruck
             <span id="luftdruck"></span>
         </button>     
@@ -46,6 +46,7 @@
 
     <script>
         // Variablen definieren
+
         let musikAnzeige = 0;
         let motorAnzeige = 0;
         let info = document.getElementById('infoput');
@@ -54,6 +55,10 @@
         let musik = document.getElementById('musik');
         let luftdruck = document.getElementById('luftdruck');
         let luftdruckAnzeige = 0;
+
+        //Infos
+        
+        let element = document.getElementById("infos");
 
         // Normalstatus
 
@@ -64,5 +69,6 @@
    <script src="js/musikanaus.js"></script>
    <script src="js/batterie.js"></script>
    <script src="js/errorbeheben.js"></script>
+   <script src="js/luftdruck.js"></script>
 </body>
 </html>

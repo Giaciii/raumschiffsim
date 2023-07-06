@@ -1,7 +1,3 @@
-// Musik An und Aus
-
-let element = document.getElementById("infos");
-
 function musikAnAus() {
   if (musikAnzeige === 0) {
       musikAnzeige = 1;
