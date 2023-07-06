@@ -2,7 +2,7 @@ function luftdruckAnAus() {
   if (luftdruckAnzeige === 0) {
     luftdruckAnzeige = 1;
     luftdruck.innerHTML = 'Erhöhen';
-    info.innerHTML += '</br>' + new Date(Date.now()).toLocaleString().slice(11, 19) + ': Luftdruck Ablassen';
+    info.innerHTML += '</br>' + new Date(Date.now()).toLocaleString().slice(10, 19) + ': Luftdruck Ablassen';
     element.scrollTop = element.scrollHeight;
     let randomError = Math.floor(Math.random() * 1000);
     if (randomError >= 999) {
@@ -11,7 +11,7 @@ function luftdruckAnAus() {
   } else {
     luftdruckAnzeige = 0;
     luftdruck.innerHTML = 'Ablassen';
-    info.innerHTML += '</br>' + new Date(Date.now()).toLocaleString().slice(11, 19) + ': Luftdruck Erhöhen';
+    info.innerHTML += '</br>' + new Date(Date.now()).toLocaleString().slice(10, 19) + ': Luftdruck Erhöhen';
     element.scrollTop = element.scrollHeight;
     let randomError = Math.floor(Math.random() * 1000);
     if (randomError >= 999) {

@@ -20,7 +20,7 @@
 
     <div class="abt1">
         <!-- Musik -->
-        <button onclick='musikAnAus()' class="btn_col2">
+        <button onclick='musikAnAus()' class="btn_col2" id="musik_btn">
             Musik
             <span id='musik'></span>
         </button>
@@ -31,7 +31,12 @@
         <button onclick='luftdruckAnAus()' class="btn_col2">
             Luftdruck
             <span id="luftdruck"></span>
-        </button>     
+        </button>
+        <!-- Tür -->
+        <button onclick='tuerAnAus()' class="btn_col2">
+            Tür
+            <span id="tuer"></span>
+        </button>  
     </div>
 
     <!-- Info -->
@@ -49,15 +54,18 @@
 
         let musikAnzeige = 0;
         let motorAnzeige = 0;
+        let luftdruckAnzeige = 0;
+        let tuerAnzeige = 0;
         let info = document.getElementById('infoput');
         let batterie = document.getElementById('batterieval');
         let motorText = document.getElementById('motor');
         let musik = document.getElementById('musik');
+        let musik_btn = document.getElementById('musik_btn');
         let luftdruck = document.getElementById('luftdruck');
-        let luftdruckAnzeige = 0;
+        let tuer = document.getElementById('tuer');
 
         //Infos
-        
+
         let element = document.getElementById("infos");
 
         // Normalstatus
@@ -65,10 +73,12 @@
         document.getElementById('musik').innerHTML = 'An';
         document.getElementById('motor').innerHTML = 'Starten';
         document.getElementById('luftdruck').innerHTML = 'Ablassen';
+        document.getElementById('tuer').innerHTML = 'Öffnen';
    </script>
    <script src="js/musikanaus.js"></script>
    <script src="js/batterie.js"></script>
    <script src="js/errorbeheben.js"></script>
    <script src="js/luftdruck.js"></script>
+   <script src="js/tuer.js"></script>
 </body>
 </html>

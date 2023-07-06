@@ -7,7 +7,7 @@ function motor() {
         batterieZyklus = setInterval(batterieRunter, 100);
         motorText.innerHTML = 'Stoppen';
         motorAnzeige = 1;
-        info.innerHTML += '</br>' + new Date(Date.now()).toLocaleString().slice(11, 19) + ': Motor An';
+        info.innerHTML += '</br>' + new Date(Date.now()).toLocaleString().slice(10, 19) + ': Motor An';
         let randomError = Math.floor(Math.random() * 100);
         if (randomError >= 99) {
             info.innerHTML += '</br>' + '<span class="error" name="1">ERROR CODE: 3</span>';
@@ -17,7 +17,7 @@ function motor() {
         clearInterval(batterieZyklus);
         motorText.innerHTML = 'Starten';
         motorAnzeige = 0;
-        info.innerHTML += '</br>' + new Date(Date.now()).toLocaleString().slice(11, 19) + ': Motor Aus';
+        info.innerHTML += '</br>' + new Date(Date.now()).toLocaleString().slice(10, 19) + ': Motor Aus';
         let randomError = Math.floor(Math.random() * 100);
         if (randomError >= 99) {
             info.innerHTML += '</br>' + '<span class="error" name="1">ERROR CODE: 4</span>';
